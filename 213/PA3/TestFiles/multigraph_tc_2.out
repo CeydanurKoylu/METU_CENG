@@ -1,0 +1,11 @@
+Testing Remove Vertex
+
+Inserting "A"
+Inserting "B"
+Inserting "C"
+A
+B
+C
+Removing "A"
+Removing "A" again...
+Vertex "A" is not found.

@@ -1,0 +1,47 @@
+Testing Hash Table Remove LRU
+Inserting {1, 2, 3, 4}, true
+Inserting {1, 2, 3, 4}, false
+Inserting {2, 1, 2, 0}, true
+Inserting {4, 2, 3, 0}, false
+Inserting {4, 2, 3, 0}, false
+Inserting {1, 2, 3, 2}, false
+Inserting {1, 2, 3, 2}, false
+Inserting {1, 2, 3, 2}, false
+Inserting {4, 2, 3, 0}, false
+Inserting {4, 2, 3, 0}, false
+____________________
+Elements 5
+[IDX] - [LRU] | DATA
+____________________
+[000]         : EMPTY
+[001]         : EMPTY
+[002]         : EMPTY
+[003]         : EMPTY
+[004]         : EMPTY
+[005] - [001] : (True ) [001]-->/002/-->[003]-->/004/
+[006] - [001] : (True ) [002]-->/001/-->[002]-->/000/
+[007] - [004] : (False) [004]-->/002/-->[003]-->/000/
+[008] - [003] : (False) [001]-->/002/-->[003]-->/002/
+[009] - [001] : (False) [001]-->/002/-->[003]-->/004/
+[010]         : EMPTY
+[011]         : EMPTY
+[012]         : EMPTY
+-------------------------
+Remove LRU with 2
+____________________
+Elements 3
+[IDX] - [LRU] | DATA
+____________________
+[000]         : EMPTY
+[001]         : EMPTY
+[002]         : EMPTY
+[003]         : EMPTY
+[004]         : EMPTY
+[005]         : SENTINEL
+[006]         : SENTINEL
+[007] - [004] : (False) [004]-->/002/-->[003]-->/000/
+[008] - [003] : (False) [001]-->/002/-->[003]-->/002/
+[009] - [001] : (False) [001]-->/002/-->[003]-->/004/
+[010]         : EMPTY
+[011]         : EMPTY
+[012]         : EMPTY

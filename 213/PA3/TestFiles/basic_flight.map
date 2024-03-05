@@ -1,0 +1,16 @@
+# Airport Names (Vertices)
+A
+B
+C
+D
+E
+F
+G
+
+# Flights
+# First Weight: Time
+# Second Weight: Cost (TRY)
+
+# A - B
+A B EDGE0 90 100
+A B EDGE1 90 100

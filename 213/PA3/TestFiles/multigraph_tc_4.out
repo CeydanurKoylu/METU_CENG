@@ -1,0 +1,25 @@
+Testing Remove Edge
+
+Inserting "A"
+Inserting "B"
+Inserting "C"
+Inserting "E0" (w0: 0.0, w1: 0.1) to A->B
+Inserting "E1" (w0: 0.3, w1: 0.1) to A->B
+Inserting "E2" (w0: 0.2, w1: 0.1) to B->A
+Inserting "E0" (w0: 0.0, w1: 0.1) to C->A
+A
+    ----0--0.1-> B (E0)
+    --0.3--0.1-> B (E1)
+B
+    --0.2--0.1-> A (E2)
+C
+    ----0--0.1-> A (E0)
+Removing "E0" from A->B
+A
+    --0.3--0.1-> B (E1)
+B
+    --0.2--0.1-> A (E2)
+C
+    ----0--0.1-> A (E0)
+Removing "E0" from A->B again
+Edge "E0" is not found on Vertex "A".

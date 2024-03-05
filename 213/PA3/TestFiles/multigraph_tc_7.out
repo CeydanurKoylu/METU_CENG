@@ -1,0 +1,35 @@
+Testing Bidir Edge Count
+
+Inserting "A"
+Inserting "B"
+Inserting "C"
+Inserting "D"
+Inserting "E"
+Inserting "F"
+Inserting "E01" (w0: 2.3, w1: 4.12) to A->B
+Inserting "E01" (w0: 1.2, w1: 2.12) to B->A
+Inserting "E50" (w0: 0.2, w1: 0.02) to C->E
+Inserting "E55" (w0: 0.2, w1: 0.02) to E->C
+Inserting "E90" (w0: 0.1, w1: 4.122) to E->F
+Inserting "E90" (w0: 0.1, w1: 4.122) to A->E
+Inserting "E90" (w0: 0.1, w1: 4.122) to E->B
+A
+    --2.3-4.12-> B (E01)
+    --0.1-4.122-> E (E90)
+B
+    --1.2-2.12-> A (E01)
+C
+    --0.2-0.02-> E (E50)
+D
+E
+    --0.2-0.02-> C (E55)
+    --0.1-4.122-> F (E90)
+    --0.1-4.122-> B (E90)
+F
+Calling BidirEdgeCount
+BidirEdge Count Amount: 1
+-------------------------------
+Inserting "E90" (w0: 0.1, w1: 4.122) to E->A
+Inserting "E90" (w0: 0.1, w1: 4.122) to B->E
+Calling BidirEdgeCount
+BidirEdge Count Amount: 3

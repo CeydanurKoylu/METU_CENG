@@ -1,0 +1,55 @@
+Testing Continue Flight
+
+Loading Map
+Ankara(ESB)
+    ---90--100-> Istanbul(IST) (THY)
+    ---95---80-> Istanbul(IST) (BoraJet)
+    ---90---70-> Istanbul(IST) (Pegasus)
+    ---60--120-> Istanbul(SAW) (AnadoluJet)
+    ---55--200-> Istanbul(SAW) (BoraJet)
+    ---90--150-> Istanbul(SAW) (Pegasus)
+    ---93--120-> Istanbul(SAW) (OnurAir)
+    ---20---70-> Milas-Bodrum(BJW) (Pegasus)
+    ---70---40-> Milas-Bodrum(BJW) (AnadoluJet)
+    ---50---90-> Izmir(ADB) (BoraJet)
+    ---60--120-> Dalaman(DLM) (Pegasus)
+    ---90---50-> Dalaman(DLM) (AnadoluJet)
+Istanbul(IST)
+    ---95--110-> Ankara(ESB) (THY)
+    ---90---80-> Ankara(ESB) (BoraJet)
+    --100--120-> Ankara(ESB) (Pegasus)
+Istanbul(SAW)
+    ---60--220-> Ankara(ESB) (AnadoluJet)
+    ---55---60-> Ankara(ESB) (BoraJet)
+    ---60--150-> Ankara(ESB) (Pegasus)
+    ---90--120-> Trabzon(TZX) (Pegasus)
+    --130---80-> Trabzon(TZX) (AnadoluJet)
+    --200--100-> Hatay(HTY) (Pegasus)
+    --150--120-> Hatay(HTY) (BoraJet)
+Izmir(ADB)
+    ---60---20-> Ankara(ESB) (BoraJet)
+Trabzon(TZX)
+    ---80--110-> Istanbul(SAW) (Pegasus)
+    --120---90-> Istanbul(SAW) (AnadoluJet)
+    ---90--110-> Dalaman(DLM) (Pegasus)
+    ---60---90-> Dalaman(DLM) (AnadoluJet)
+Milas-Bodrum(BJW)
+    ---50---60-> Ankara(ESB) (Pegasus)
+    ---40---70-> Ankara(ESB) (AnadoluJet)
+    ---50---60-> Dalaman(DLM) (Pegasus)
+    ---40---70-> Dalaman(DLM) (AnadoluJet)
+    --200--100-> Van(VAN) (Pegasus)
+Dalaman(DLM)
+    ---90--110-> Trabzon(TZX) (BoraJet)
+    ---50--120-> Trabzon(TZX) (AnadoluJet)
+    ---40---90-> Antalya(AYT) (BoraJet)
+Antalya(AYT)
+Hatay(HTY)
+Van(VAN)
+--------------------
+Halting Flight Ankara(ESB), Istanbul(IST), THY
+--------------------
+Continue Flight Ankara(ESB), Istanbul(IST), THY
+--------------------
+Continue Flight Ankara(ESB), Istanbul(IST), THY ***Again***
+A flight path between "Ankara(ESB)" and "Istanbul(IST)" via THY airlines cannot be resumed

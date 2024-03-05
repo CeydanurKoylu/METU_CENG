@@ -1,0 +1,92 @@
+Testing Find Flight
+
+Loading Map
+Ankara(ESB)
+    ---90--100-> Istanbul(IST) (THY)
+    ---95---80-> Istanbul(IST) (BoraJet)
+    ---90---70-> Istanbul(IST) (Pegasus)
+    ---60--120-> Istanbul(SAW) (AnadoluJet)
+    ---55--200-> Istanbul(SAW) (BoraJet)
+    ---90--150-> Istanbul(SAW) (Pegasus)
+    ---93--120-> Istanbul(SAW) (OnurAir)
+    ---20---70-> Milas-Bodrum(BJW) (Pegasus)
+    ---70---40-> Milas-Bodrum(BJW) (AnadoluJet)
+    ---50---90-> Izmir(ADB) (BoraJet)
+    ---60--120-> Dalaman(DLM) (Pegasus)
+    ---90---50-> Dalaman(DLM) (AnadoluJet)
+Istanbul(IST)
+    ---95--110-> Ankara(ESB) (THY)
+    ---90---80-> Ankara(ESB) (BoraJet)
+    --100--120-> Ankara(ESB) (Pegasus)
+Istanbul(SAW)
+    ---60--220-> Ankara(ESB) (AnadoluJet)
+    ---55---60-> Ankara(ESB) (BoraJet)
+    ---60--150-> Ankara(ESB) (Pegasus)
+    ---90--120-> Trabzon(TZX) (Pegasus)
+    --130---80-> Trabzon(TZX) (AnadoluJet)
+    --200--100-> Hatay(HTY) (Pegasus)
+    --150--120-> Hatay(HTY) (BoraJet)
+Izmir(ADB)
+    ---60---20-> Ankara(ESB) (BoraJet)
+Trabzon(TZX)
+    ---80--110-> Istanbul(SAW) (Pegasus)
+    --120---90-> Istanbul(SAW) (AnadoluJet)
+    ---90--110-> Dalaman(DLM) (Pegasus)
+    ---60---90-> Dalaman(DLM) (AnadoluJet)
+Milas-Bodrum(BJW)
+    ---50---60-> Ankara(ESB) (Pegasus)
+    ---40---70-> Ankara(ESB) (AnadoluJet)
+    ---50---60-> Dalaman(DLM) (Pegasus)
+    ---40---70-> Dalaman(DLM) (AnadoluJet)
+    --200--100-> Van(VAN) (Pegasus)
+Dalaman(DLM)
+    ---90--110-> Trabzon(TZX) (BoraJet)
+    ---50--120-> Trabzon(TZX) (AnadoluJet)
+    ---40---90-> Antalya(AYT) (BoraJet)
+Antalya(AYT)
+Hatay(HTY)
+Van(VAN)
+--------------------
+Finding Flight Between Istanbul(IST), Izmir(ADB), 0.0
+A flight path is calculated between "Istanbul(IST)" and "Izmir(ADB)" using cost.
+Istanbul(IST)---90->Ankara(ESB)---50->Izmir(ADB)
+--------------------
+Finding Flight Between Istanbul(IST), Izmir(ADB), 0.0 ***Again***
+A flight path between "Istanbul(IST)" and "Izmir(ADB)" using cost is found in cache.
+Istanbul(IST)---90->Ankara(ESB)---50->Izmir(ADB)
+--------------------
+Finding Flight Between Istanbul(IST), Ankara(ESB), 0.3
+Istanbul(IST)---87->Ankara(ESB)
+____________________
+Elements 1
+[IDX] - [LRU] | DATA
+____________________
+[000]         : EMPTY
+[001]         : EMPTY
+[002]         : EMPTY
+[003]         : EMPTY
+[004]         : EMPTY
+[005]         : EMPTY
+[006]         : EMPTY
+[007]         : EMPTY
+[008]         : EMPTY
+[009]         : EMPTY
+[010]         : EMPTY
+[011]         : EMPTY
+[012]         : EMPTY
+[013]         : EMPTY
+[014]         : EMPTY
+[015]         : EMPTY
+[016]         : EMPTY
+[017]         : EMPTY
+[018]         : EMPTY
+[019]         : EMPTY
+[020]         : EMPTY
+[021]         : EMPTY
+[022]         : EMPTY
+[023]         : EMPTY
+[024]         : EMPTY
+[025] - [002] : (True ) [001]-->/001/-->[000]-->/009/-->[003]
+[026]         : EMPTY
+[027]         : EMPTY
+[028]         : EMPTY

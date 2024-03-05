@@ -1,0 +1,18 @@
+Testing Find Furthest Transfer Via Airline
+
+Loading Map
+A
+    ---90--100-> B (EDGE0)
+    ---90--100-> B (EDGE1)
+B
+C
+D
+E
+F
+G
+--------------------
+Furthest Transfer From A via EDGE0
+Result is: 1
+--------------------
+Furthest Transfer From B via EDGE1
+Result is: 0

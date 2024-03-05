@@ -1,0 +1,28 @@
+Testing Filtered Shortest Path
+
+Inserting "A"
+Inserting "B"
+Inserting "C"
+Inserting "D"
+Inserting "E"
+Inserting "F"
+Inserting "E01" (w0: 2.3, w1: 4.12) to A->B
+Inserting "E20" (w0: 1.2, w1: 2.12) to B->C
+Inserting "E50" (w0: 0.2, w1: 0.02) to C->E
+Inserting "E90" (w0: 0.1, w1: 4.122) to E->F
+A
+    --2.3-4.12-> B (E01)
+B
+    --1.2-2.12-> C (E20)
+C
+    --0.2-0.02-> E (E50)
+D
+E
+    --0.1-4.122-> F (E90)
+F
+Calling filtered shortest path from A->F, weight: 0.1f empty filter
+Return value: True
+A-3.21->B-1.66->C-0.11->E-2.111->F
+-------------------------------
+Calling filtered shortest path from A->F, weight: 0.1f filter={"E50"}
+Return value: False
